@@ -1,3 +1,4 @@
+storage: none
 source https://www.nuget.org/api/v2
 
 framework: >= net461
@@ -6,7 +7,6 @@ nuget FSharp.Core
 nuget Fuchu
 nuget netDxf
 
-group Build
-source https://www.nuget.org/api/v2
-
-nuget FAKE
+// source https://api.github.com
+git https://github.com/gretmn102/FsharpMyExtension.git build:"build.cmd NuGet", Packages: /FsharpMyExtension/FsharpMyExtension/bin/Release/
+nuget FsharpMyExt

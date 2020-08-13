@@ -7,13 +7,16 @@
     <Tailcalls>true</Tailcalls>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="FSharpMyExt" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="ImportDFX.fs" />
     <!-- <Compile Include="AutoCADCoords.fs" /> -->
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <Reference Include="System.Runtime" />
-    <Reference Include="$(FsharpMyExtension)" />
+    <!-- <Reference Include="$(FsharpMyExtension)" /> -->
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>

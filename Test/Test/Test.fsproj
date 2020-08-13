@@ -6,6 +6,9 @@
     <Tailcalls>true</Tailcalls>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="FSharpMyExt" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\AutoCADCoords\AutoCADCoords\AutoCADCoords.fsproj">
       <Name>AutoCADCoords.fsproj</Name>
     </ProjectReference>
@@ -16,7 +19,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime" />
-	<Reference Include="$(FsharpMyExtension)" />
+	<!-- <Reference Include="$(FsharpMyExtension)" /> -->
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
